@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Engineer Classes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ec</th>
+      <th>E classname</th>
+      <th>Class desc</th>
+      <th>Enabled</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @engineer_classes.each do |engineer_class| %>
+      <tr>
+        <td><%= engineer_class.eC_id %></td>
+        <td><%= engineer_class.e_className %></td>
+        <td><%= engineer_class.class_desc %></td>
+        <td><%= engineer_class.enabled %></td>
+        <td><%= link_to 'Show', engineer_class %></td>
+        <td><%= link_to 'Edit', edit_engineer_class_path(engineer_class) %></td>
+        <td><%= link_to 'Destroy', engineer_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Engineer class', new_engineer_class_path %>

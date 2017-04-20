@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  e_id: 1
+  full_name: MyString
+  class: MyString
+  enabled: false
+  accepted_projects: 1
+  status: MyString
+
+two:
+  e_id: 1
+  full_name: MyString
+  class: MyString
+  enabled: false
+  accepted_projects: 1
+  status: MyString

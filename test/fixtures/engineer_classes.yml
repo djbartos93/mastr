@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eC_id: 1
+  e_className: MyString
+  class_desc: MyText
+  enabled: false
+
+two:
+  eC_id: 1
+  e_className: MyString
+  class_desc: MyText
+  enabled: false

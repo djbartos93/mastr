@@ -1,0 +1,33 @@
+<%= form_for(@engineer_class) do |f| %>
+  <% if @engineer_class.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@engineer_class.errors.count, "error") %> prohibited this engineer_class from being saved:</h2>
+
+      <ul>
+      <% @engineer_class.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :eC_id %><br>
+    <%= f.number_field :eC_id %>
+  </div>
+  <div class="field">
+    <%= f.label :e_className %><br>
+    <%= f.text_field :e_className %>
+  </div>
+  <div class="field">
+    <%= f.label :class_desc %><br>
+    <%= f.text_area :class_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :enabled %><br>
+    <%= f.check_box :enabled %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

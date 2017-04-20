@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ec:</strong>
+  <%= @engineer_class.eC_id %>
+</p>
+
+<p>
+  <strong>E classname:</strong>
+  <%= @engineer_class.e_className %>
+</p>
+
+<p>
+  <strong>Class desc:</strong>
+  <%= @engineer_class.class_desc %>
+</p>
+
+<p>
+  <strong>Enabled:</strong>
+  <%= @engineer_class.enabled %>
+</p>
+
+<%= link_to 'Edit', edit_engineer_class_path(@engineer_class) %> |
+<%= link_to 'Back', engineer_classes_path %>

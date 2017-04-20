@@ -1,0 +1,41 @@
+<%= form_for(@engineer) do |f| %>
+  <% if @engineer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@engineer.errors.count, "error") %> prohibited this engineer from being saved:</h2>
+
+      <ul>
+      <% @engineer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :e_id %><br>
+    <%= f.number_field :e_id %>
+  </div>
+  <div class="field">
+    <%= f.label :full_name %><br>
+    <%= f.text_field :full_name %>
+  </div>
+  <div class="field">
+    <%= f.label :class %><br>
+    <%= f.text_field :class %>
+  </div>
+  <div class="field">
+    <%= f.label :enabled %><br>
+    <%= f.check_box :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :accepted_projects %><br>
+    <%= f.number_field :accepted_projects %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

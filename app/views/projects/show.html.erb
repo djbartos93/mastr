@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>P:</strong>
+  <%= @project.p_id %>
+</p>
+
+<p>
+  <strong>P name:</strong>
+  <%= @project.p_name %>
+</p>
+
+<p>
+  <strong>P desc:</strong>
+  <%= @project.p_desc %>
+</p>
+
+<p>
+  <strong>P creator:</strong>
+  <%= @project.p_creator %>
+</p>
+
+<p>
+  <strong>Engineer:</strong>
+  <%= @project.engineer %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @project.status %>
+</p>
+
+<p>
+  <strong>Accepted:</strong>
+  <%= @project.accepted %>
+</p>
+
+<p>
+  <strong>Complete:</strong>
+  <%= @project.complete %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
